@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../js/modal.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--------------------------------------------- navigation --------------------------------------------->
+    <nav class="nav-bar">
+        <a href="./accueil.html">ACCUEIL</a>
+        <a href="">CV</a>
+        <a href="./projects.html">PROJETS</a>
+        <a href="">CONTACT</a>
+    </nav>
+    <main class="body-page">
+        <section class="section-elem">
+            <h2 class="section-elem-title">All my projects</h2>
+            <!-- <input type="button" value="filter-button" class="material-symbols-outlined filter-button"> -->
+            <div class="sort-button" id="btnFilter">
+                <label for="sort" class="material-symbols-outlined">sort</label>
+                <input type="button" name="sort" value="Filter" class="button">
+                
+            </div>
+            
+            <!--------------------------------------------- liste des projets --------------------------------------------->
+            <div class="section-elem-box">
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                <article class="projectBox projectBox--two-elem">
+                    <!-- <img src="" alt="" class="projectBox-img"> -->
+                    <div class="projectBox-img"></div>
+                    <div class="projectBox-textBox">
+                        <h2 class="projectBox-textBox-title">title of project</h2>
+                        <p class="projectBox-textBox-paragraph">Date :09/2022</p>
+                        <p class="projectBox-textBox-paragraph">Technologies: PHP, Laravel, Tailwind</p>
+                        <p class="projectBox-textBox-paragraph">Team Project whith 4 people in September</p>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+
+        <!--------------------------------------------- pagination --------------------------------------------->
+        <div class="number-page-list">
+            <a href="" class="number-page">1</a>
+            <a href="" class="number-page">2</a>
+            <a href="" class="number-page">3</a>
+        </div>
+
+        <!--------------------------------------------- modal --------------------------------------------->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>TRI</h2>
+              </div>
+              <form class="modal-body sort-box">
+                <h3 class="title-sort-option">LANGUAGE</h3>
+                    <label for="languagePHP" class="sort-option">
+                        PHP
+                        <input type="checkbox" name="languagePHP" id="languagePHP">
+                    </label>
+                    
+                    <label for="languageJS" class="sort-option">
+                        JS
+                        <input type="checkbox" name="languageJS" id="languageJS">
+                    </label>
+                    
+                    <label for="languageHTML" class="sort-option">
+                        HTML
+                        <input type="checkbox" name="languageHTML" id="languageHTML">
+                    </label>
+                    
+                
+                <h3 class="title-sort-option">DATE DE SORTIE</h3>
+                    <label for="old" class="sort-option">
+                        du plus vieux
+                        <input type="radio" name="DateSortie" id="old">
+                    </label>
+                    
+                    <label for="new" class="sort-option">
+                        du plus recent
+                        <input type="radio" name="DateSortie" id="new">
+                    </label>
+                    
+
+                <h3 class="title-sort-option">ORDRE ALPHABETIQUE</h3>
+                    <label for="AtoZ" class="sort-option">
+                        A-Z 
+                        <input type="radio" name="ordre-Alphab" id="AtoZ">
+                    </label>
+                    
+                    <label for="ZtoA" class="sort-option">
+                        Z-A 
+                        <input type="radio" name="ordre-Alphab" id="ZtoA">
+                    </label>
+                    
+                    <input type="button" value="APPLIQUER" class="applique">
+              </form>
+            </div>
+          
+          </div>
+    </main>
+
+    <!--------------------------------------------- footer --------------------------------------------->
+    <footer>
+        <p>Copyright © - Privacy - Developers - 2022</p>
+        <div class="reseau-sociaux-box">
+            <a href="" class="reseau-sociaux-link"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="" class="reseau-sociaux-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

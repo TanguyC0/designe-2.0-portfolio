@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --color-dark: #06224a;
+    --color-mid: #dde4ff;
+    --color-use: #d1d9f9;
+    --color-light: #edf0ff;
+
+    --border-radius: 10px;
+  }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    vertical-align: baseline;
+}
+
+body
+{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/*----------------------------- top --------------------------*/
+.nav-bar
+{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    height: 4em;
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.nav-bar>a
+{
+    color: var(--color-light);
+    text-decoration: none;
+    margin-left: 3em;
+}
+
+.nav-bar>a:hover
+{
+    color: var(--color-use);
+}
+
+/*----------------------------- middle --------------------------*/
+
+.body-page
+{
+    background-color: var(--color-light);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    flex: 1;
+}
+
+.section-elem
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-elem-title
+{
+    color: var(--color-dark);
+    font-size: 1.5em;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.section-elem-box
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projectBox
+{
+    background-color: var(--color-mid);
+    border-radius: var(--border-radius);
+    width: 40em;
+    height: 14em;
+
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.projectBox:hover
+{
+    background-color: var(--color-use);
+}
+
+.projectBox--two-elem
+{
+    width: 50em;
+    height: 14em;
+}
+
+.projectBox-img
+{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+}
+
+.projectBox-textBox
+{
+    width: 50%;
+    height: 100%;
+    padding: 1em;
+    color: var(--color-dark);
+}
+
+.projectBox-textBox-title
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.projectBox-textBox-paragraph
+{
+    font-size: 14px;
+    margin: 0.5em 0;
+}
+
+/*----------------------------- pagination --------------------------*/
+
+.number-page-list
+{
+    display: flex;
+    justify-content: center;
+}
+.number-page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-mid);
+    border-radius: var(--border-radius);
+
+    width: 2em;
+    height: 2em;
+
+    color: var(--color-dark);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+}
+
+.number-page:hover
+{
+    background-color: var(--color-use);
+}
+
+/*----------------------------- bottom --------------------------*/
+footer
+{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.reseau-sociaux-box
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa
+{
+    color: var(--color-light);
+    margin-left: 1em;
+    
+}
+
+
+/*----------------------------- sort button --------------------------*/
+
+.sort-button
+{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-mid);
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--border-radius);
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.sort-button:hover
+{
+    background-color: var(--color-use);
+}
+
+.button
+{
+    background: none;
+}
+
+
+/*----------------------------- sort button modal--------------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    bottom: 5em;
+    width: 100%; /* Full width */
+    height: calc(100% - 9em); /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 5em;
+    background-color: var(--color-light);
+    height: calc(100% - 9em);
+    width: 20em;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--color-light);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--color-use);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row-reverse;
+    height: 3em;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+  
+  .modal-body {padding: 20px 16px;}
+  
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {left: -300px; opacity: 0} 
+    to {left: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+/*----------------------------- sort option--------------------------*/
+
+.sort-box
+{
+    display: flex;
+    flex-direction: column;
+}
+.title-sort-option
+{
+    margin-top: 1em;
+}
+
+.sort-option
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.applique
+{
+    background-color: var(--color-mid);
+    border-radius: var(--border-radius);
+    width: fit-content;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em;
+    font-weight: 700;
+}
+
+.applique:hover
+{
+    background-color: var(--color-use);
+}
