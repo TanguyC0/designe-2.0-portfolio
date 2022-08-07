@@ -26,6 +26,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* background-color: red; */
     
 }
 
@@ -351,4 +352,19 @@ footer
 .applique:hover
 {
     background-color: var(--color-use);
+}
+
+/*----------------------------- media--------------------------*/
+
+@media only screen and (max-width: 768px)
+{
+    .nav-bar
+    {
+        padding-left: 1em;
+    }
+
+    .nav-bar>a
+    {
+        margin-left: 2em;
+    }
 }
